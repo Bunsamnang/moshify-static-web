@@ -233,3 +233,41 @@ a {
     font-size: 1.5rem;
   }
 }
+
+/* Input */
+
+.input {
+  padding: 1.5rem 3rem;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  outline: none;
+  color: var(--heading-color);
+  font-size: 2rem;
+}
+
+::placeholder {
+  color: rgb(197, 197, 197);
+}
+
+.input-group {
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  display: flex;
+}
+
+/* meaning that .input that is inside of input-group */
+.input-group .input {
+  border: none;
+  flex-grow: 1;
+  padding: 1rem 1.5rem;
+}
+
+.input-group .btn {
+  margin: 4px;
+}
+
+@media screen and (min-width: 1024px) {
+  .input {
+    font-size: 1.5rem;
+  }
+}
